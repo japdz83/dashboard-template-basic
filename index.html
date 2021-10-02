@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+
+    <!-- BoxIcons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Mis Stilos -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Resposive Admin Dashboard Template </title>
+</head>
+<body>
+    <!--=========================== INICIA SIDEBAR ===========================-->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-rocket'></i>
+            <span class="logo-name">StartUp</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box' ></i>
+                    <span class="links-name">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul' ></i>
+                    <span class="links-name">Order List</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt' ></i>
+                    <span class="links-name">Analitics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack' ></i>
+                    <span class="links-name">Stocks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book-alt' ></i>
+                    <span class="links-name">Total Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links-name">Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"> 
+                    <i class='bx bx-chat' ></i>
+                    <span class="links-name">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"> 
+                    <i class='bx bx-heart' ></i>
+                    <span class="links-name">Favorite</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"> 
+                    <i class='bx bx-cog' ></i>
+                    <span class="links-name">Settings</span>
+                </a>
+            </li>
+            <li >
+                <a href="#" id='logout'> 
+                    <i class='bx bx-log-out-circle' ></i>
+                    <span class="links-name">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+<!--=========================== FIN SIDEBAR ===========================-->
+
+<!--=========================== INICIA HOME - NAV ===========================-->
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button" id='btn'>
+                <i class='bx bx-menu'  ></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" id="" placeholder="Search..." />
+                <i class='bx bx-search' ></i>
+            </div>
+            <div class="profile-details">
+                <i class='bx bx-bell' ></i>
+                <i class='bx bx-envelope' ></i>
+                <div class="admin-box">
+                    <span class="admin-name">John Doe</span>
+                    <img src="./img/profile-img.jpg" alt="Admin Img">
+                    <i class='bx bx-chevron-down' ></i>
+                </div>
+            </div>
+        </nav>
+        <!--=========================== FIN HOME - NAV ===========================-->
+        <!--=========================== INICIA HOME - CONTENT ===========================-->
+        <div class="home-content">
+            <div class="overview-boxes">
+
+                <!-- Init Box Item -->
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box-topic">
+                            Order List
+                        </div>
+                        <div class="number">
+                            40.769
+                        </div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt' ></i>
+                            <div class="text">Up from yesterday</div>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-alt cart' ></i>
+                </div>
+                <!-- End Box Item -->
+                <!-- Init Box Item -->
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box-topic">
+                            Total Sale
+                        </div>
+                        <div class="number">
+                            70.523
+                        </div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt cartplus' ></i>
+                            <div class="text">Up from yesterday</div>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-add cart two' ></i>
+                </div>
+                <!-- End Box Item -->
+                <!-- Init Box Item -->
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box-topic">
+                            Total Profit
+                        </div>
+                        <div class="number">
+                            25.523
+                        </div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt cartup' ></i>
+                            <div class="text">Up from yesterday</div>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart cart three'></i>
+                </div>
+                <!-- End Box Item -->
+                <!-- Init Box Item -->
+                <div class="box">
+                    <div class="left-side">
+                        <div class="box-topic">
+                            Total Profit
+                        </div>
+                        <div class="number">
+                            15.425
+                        </div>
+                        <div class="indicator">
+                            <i class='bx bx-down-arrow-alt  down' ></i>
+                            <div class="text">Up from yesterday</div>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-download cart four'></i>
+                </div>
+                <!-- End Box Item -->
+            </div>
+        </div>
+        <!--=========================== FIN HOME - CONTENT ===========================-->
+        <!--=========================== INICIO SALE - CONTENT ===========================-->
+        <div class="sales-boxes">
+            <!-- Init Box Item Left side -->
+            <div class="recent-sales box">
+                <div class="title">Recent Sale</div>
+                <div class="sales-details">
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Sale</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Alex Doe</td>
+                            <td>Delivered</td>
+                            <td>$204.98</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Francisco Chang</td>
+                            <td>Delivered</td>
+                            <td>$170.66</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Roland Mendel</td>
+                            <td>Pending</td>
+                            <td>$56.56</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Helen Bennett</td>
+                            <td>Returned</td>
+                            <td>$44.95</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Delivered</td>
+                            <td>$67.33</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Pending</td>
+                            <td>$23.53</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02 Jan 2021</td>
+                            <td>Tiana Loths</td>
+                            <td>Delivered</td>
+                            <td>$46.52</td>
+                            <td><a href="#" class="btn-detail">Detail</a></td>
+                        </tr>
+                        </table>
+                   
+                </div>
+                <div class="button">
+                    <a href="#">See All</a>
+                </div>
+            </div>
+            <!-- End Box Item -->
+
+            <!-- Init Box Item Right side -->
+            <div class="top-sales box">
+                <div class="title">Top Selling Product Box</div>
+                <ul class="top-sales-details">
+                    <li>
+                        <a href="#">
+                            <img src="./img/bag.jpg" alt="Addidas" />
+                            <span class="product-name">Gucci Women's Bag</span>
+                        </a>
+                        <span class="price">$2345</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/sunglasses.jpg" alt="Addidas" />
+                            <span class="product-name">Vuitton Sunglasses</span>
+                        </a>
+                        <span class="price">$1107</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/jeans.jpg" alt="Addidas" />
+                            <span class="product-name">Hourglass Jeans</span>
+                        </a>
+                        <span class="price">$1567</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/nike.jpg" alt="Addidas" />
+                            <span class="product-name">Nike Sport Shoe</span>
+                        </a>
+                        <span class="price">$1234</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/scarves.jpg" alt="Addidas" />
+                            <span class="product-name">Hermes Silk Scarves</span>
+                        </a>
+                        <span class="price">$2312</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/blueBag.jpg" alt="Addidas" />
+                            <span class="product-name">Succi Ladies Bag</span>
+                        </a>
+                        <span class="price">$1456</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/addidas.jpg" alt="Addidas" />
+                            <span class="product-name">Addidas Running Shoe</span>
+                        </a>
+                        <span class="price">$2345</span>
+                    </li>
+                </ul>
+                
+            </div>
+            <!-- End Box Item -->
+        </div>
+        <!--=========================== FIN SALE - CONTENT ===========================-->
+    </section>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
